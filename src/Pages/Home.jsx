@@ -21,7 +21,7 @@ export const fadeIn = (delay) => ({
 
 export default function Home() {
   return (
-    <div className='flex md:flex-row w-full h-full min-h-[500px] max-[418px]:min-h-[430px] flex-col justify-between items-center'>
+    <div className='flex md:flex-row w-full h-full min-h-[500px] max-[418px]:min-h-[440px] flex-col justify-between items-center'>
       {/* Text Content */}
       <div className='h-full space-y-2 w-full overflow-hidden flex flex-col justify-center items-center text-white'>
         <motion.h2 variants={fadeIn(0.3)} initial="hidden" animate="show" exit="exit" className='text-4xl font-bold'>

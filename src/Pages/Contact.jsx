@@ -46,13 +46,14 @@ export default function Contact() {
         className="   text-white flex flex-col items-start justify-center  my-4"
         id="Contact"
       >
-         <h3 className="font-bold text-3xl mb-5 ">
+         <h3 className="font-bold text-3xl mb-5  max-[570px]:text-2xl max-[407px]:text-xl">
            Before You go Lets Contact
           </h3>
          
-       <div className="flex w-full items-center justify-center">
+       <div className="flex flex-col  md:flex-row  w-full items-center justify-center">
+      
        
-       <div className="bg-black/75  shadow-2xl rounded-xl w-1/2  p-5">
+       <div className="bg-black/75  shadow-2xl rounded-xl md:w-1/2 w-full order-2 md:order-1   p-5">
          <p className="text-2xl ">Send me a message....</p>
           <motion.form
             className="flex flex-col justify-center items-center text-white"
@@ -102,7 +103,7 @@ export default function Contact() {
             </button>
           </motion.form>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 order-1 md:order-2">
           <motion.img  variants={fadeIn(0.4)} transition={{duration:0.4,delay:0.2 , ease:"easeInOut"}}
                initial={{opacity:0,scale:0.9, y:100}} animate={{opacity:1,scale:1, y:0}} exit={{opacity:1,scale:1, y:0,transition:{duration:0.2}}} src="/Mobile user-bro.svg" alt="contact image" className="w-full h-full"/>
         </div>

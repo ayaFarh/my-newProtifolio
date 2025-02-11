@@ -69,7 +69,7 @@ export default function About() {
     About me
   </motion.h2>
 
-  <p className="text-2xl w-[80%] text-center ">
+  <p className="md:text-xl text-lg w-[90%]  text-center ">
     
   Hello, my name is Aya Mohamed, and I am a dedicated Front-End
           Developer with a strong focus on React and JavaScript. I have a
